@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+ 	background-color: #FFF;
+ 	font-family: 'PT Sans', sans-serif;
+ }
+
+ main {
+ 	height: 75vh;
+ }
+
+ .container-fluid {
+ 	padding: 0;
+ }
+
+ main > div > div {
+ 	height: 14vh;
+ }
+
+ header {
+ 	height: 8vh;
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	background: orange;
+ }
+
+ .navbar-brand {
+ 	font-size: 30px;
+ 	padding-left: 10px;
+ }
+
+ .navbar-nav {
+ 	font-size: 20px;
+ 	letter-spacing: 1px;
+ 	padding-right: 10px;
+ }
+
+ footer {
+ 	height: 5vh;
+ 	background-color: #808080;
+ 	padding: 10px;
+ }

@@ -1,0 +1,44 @@
+/*
+ * CSS Reset
+ */
+
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
+
+/*
+ * General Rules
+ */
+
+ html, 
+ body, 
+ .container {
+ 	height: 100%;
+ 	font-family: 'PT Sans', sans-serif;
+ }
+
+/*
+ * Main Content
+ */
+
+ .container {
+	display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .intro {
+ 	font-size: 40px;
+ }
+
+ .intro-btn {
+ 	display: block;
+ }

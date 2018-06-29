@@ -60,15 +60,30 @@
  	background-color: #F69A05;
  }
 
- main > div > img {
+ #content-text {
+ 	width: 100%;
+ 	height: 100vh;
+ 	margin-top: 20px;
+ 	background-color: #FFF;
+ }
+
+ #content-photo {
+ 	width: 100%;
+ 	height: 100vh;
+ 	position: relative;
+ }
+
+ #content-photo > img {
+
+ }
+
+
+
+/* main > div > img {
  	width: 100%;
  	margin-top: 20px;
  	margin-bottom: 20px;
- }
-
- .form-group {
- 	margin-bottom: 0;
- }
+ }*/
 
 /*
  * Footer Section

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-	<title></title>
+	<title>Contact</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -25,21 +23,15 @@
 
 	<!-- Loads Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/contact-style.css">
-
 </head>
 
 <body>
-
 	<header class="site-header">
-
-		<nav class="navbar navbar-expand-lg navbar-light">
-
-			<a class="navbar-brand" href="./home.html">Pera Bilis</a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<nav class="navbar navbar-expand-lg navbar-light pl-4 pr-4">
+			<a class="navbar-brand" href="./home.html">PeraBilis</a>
+			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 
@@ -60,80 +52,71 @@
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link active" href="./contact.html"><u>Contact</u></a>
+						<a class="nav-link active glow" href="./contact.html">Contact</a>
 					</li>
-
 				</ul>
-
 			</div> <!-- /.navbar-collapse -->
-
 		</nav> <!-- /.navbar -->
-
 	</header> <!-- /.site-header -->
 
 	<main class="site-main">
 
 		<div class="container-fluid">
 
-			<div class="background-mandarin text-center">
+			<img class="img-fluid" src="./assets/img/call-center-image.jpg" alt="Mock Image Only">	
 
-				<div class="container call-center-background">
-					
-					<div id="contact-info">
-				
-						<div class="row">
-						
-							<div class="col-sm-12 col-md-12 col-lg-12">
-							
-								<h3 class="pt-3">Contact Us</h3>
+				<div class="row">
 
-								<form method="GET" action="./lib/contact.php">
+				<div class="col-sm-12 col-md-12 col-lg-6 bg-white text-center pl-5 pr-5">	
+
+					<h3 class="pt-3">Send A Message</h3>
+
+					<form method="GET" action="./lib/contact.php">
+
+						<div class="form-group pl-3 pr-3 pb-3">
+
+							<label class="mt-2" for="guest-name">Name:</label>
+							<input type="text" class="form-control" id="guest-name" name="guest-name" required>
 								
-									<div class="form-group pl-5 pr-5">
-
-										<label class="mt-2" for="guest-name">Name:</label>
-										<input type="text" class="form-control" id="guest-name" name="guest-name" required>
-							
-										<label class="mt-3" for="guest-email">Email:</label>
-										<input type="email" class="form-control" id="guest-email" name="guest-email" required>
-
-										<label class="mt-3" for="guest-contact">Contact #:</label>
-										<input type="email" class="form-control" id="guest-contact" name="guest-contact" required>
-							
-										<label class="mt-3" for="guest-message">Message:</label>
-										<textarea class="form-control" rows="3" id="guest-message" required></textarea>
-
-										<input type="submit" class="btn mt-3" value="Send">
+							<label class="mt-3" for="guest-email">Email:</label>
+							<input type="email" class="form-control" id="guest-email" name="guest-email" required>
+							<label class="mt-3" for="guest-contact">Contact #:</label>
 								
-									</div> <!-- /.form-group -->
+							<input type="email" class="form-control" id="guest-contact" name="guest-contact" required>
+							<label class="mt-3" for="guest-message">Message:</label>
+								
+							<textarea class="form-control" rows="3" id="guest-message" required></textarea>
+							<input type="submit" class="btn mt-3" value="Send">
 
-								</form> <!-- /form -->
+						</div> <!-- /.form-group -->
 
-							</div> <!-- /.col-sm-12 col-md-12 col-lg-12 -->
+					</form> <!-- /form -->
 
-						</div> <!-- /.row -->
+				</div> <!-- /.col-sm-12 col-md-12 col-lg-12 -->
 
-					</div> <!-- /#contact-info -->
-					
-				</div> <!-- /.call-center-background -->
+				<div class="col-sm-12 col-md-12 col-lg-6 bg-white text-center pt-4 pb-4 border-left">
 
-				<!-- <img class="img-fluid" src="./assets/img/call-center-image.jpg" alt="Mock Image Only"> -->
+					<div class="contact-info">
 
-				
+						<h5 class="font-weight-bold">Email Support Hotline:</h5>		
+						<p>support@perabilis.ph</p>
 
-			</div> <!-- /.background-mandarin -->
+						<h5 class="font-weight-bold pt-3">Phone Support Hotline:</h5>		
+						<p>+63-2-573-1143</p>
+
+					</div> <!-- /.contact-info -->
+
+				</div> <!-- /.col-sm-12 col-md-12 col-lg-12 -->
+
+			</div> <!-- /.row -->
 
 		</div> <!-- /.container-fluid -->
 
 	</main> <!-- /.site-main -->
 
-	<!-- <footer class="site-footer">
-
-			<div class="text-center">
-				<p>&copy; Copyright Pera Bilis™ 2018</p>
-			</div>
-
-	</footer> /#site-footer -->
+	<footer class="site-footer">
+		<p class="font-weight-bold">&copy; Copyright Pera Bilis™ 2018</p>
+	</footer> <!-- /#site-footer -->
 
 	<!-- Loads Custom Script -->
 	<script src="./assets/js/script.js"></script>

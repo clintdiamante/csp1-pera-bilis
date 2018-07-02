@@ -36,9 +36,8 @@
  	background-color: #FFF;
  }
 
- header > nav > a.navbar-brand {
- 	font-size: 30px;
- 	font-weight: bold;
+ .navbar-brand {
+ 	height: 60px;
  }
 
  .navbar-nav {
@@ -60,30 +59,69 @@
  	background-color: #F69A05;
  }
 
- #content-text {
- 	width: 100%;
- 	height: 100vh;
- 	margin-top: 20px;
- 	background-color: #FFF;
- }
-
- #content-photo {
- 	width: 100%;
- 	height: 100vh;
+ main > div > img {
  	position: relative;
- }
-
- #content-photo > img {
-
- }
-
-
-
-/* main > div > img {
- 	width: 100%;
  	margin-top: 20px;
  	margin-bottom: 20px;
- }*/
+ }
+
+ .left-text {
+ 	position: absolute;
+ 	top: 35%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ }
+
+ .left-text > h5 {
+ 	color: #2E2E2E;
+ 	text-align: center;
+ 	font-size: 25px;
+ }
+
+ .left-text > input {
+ 	width: 500px;
+ }
+
+ main > div > div > div {
+ 	position: absolute;
+ }
+
+/* Accordion */
+
+ .accordion {
+  	background-color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+ }
+
+ .active-acc,
+ .accordion:hover {
+    text-decoration: underline;
+ }
+
+ .accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+ }
+
+ .active-acc:after {
+    content: "\2796";
+ }
+
+ .panel {
+    padding-left: 30px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+ }
 
 /*
  * Footer Section
@@ -91,12 +129,54 @@
 
  footer {
  	width: 100%;
- 	background-color: #808080;
- 	padding: 10px;
+ 	background-color: #1B252E;
+ 	padding-top: 10px;
  }
 
- footer > p {
+ footer > div > div > div > p {
+ 	color: #92A7B8;
+ 	margin-top: 10px;
+ }
+
+ footer > div > div > div {
  	text-align: center;
- 	margin: 0;
+ }
+
+ footer > div > div > div > ul > li {
+ 	display: inline;
+ 	margin: 5px;
+ 	list-style-type: none;
+ }
+
+ footer > div > div > div > ul > li > a {
+ 	font-size: 25px;
+ 	color: #92A7B8;
+ }
+
+/*
+ * Media Query - Small Devices
+ */
+
+ @media (max-width: 575.98px) { 
+
+ }
+
+/*
+ * Media Query - Large Devices
+ */
+
+ @media (min-width: 992px) {
+
+ 	footer > div > div > div#footer-left {
+ 		text-align: left;
+ 	}
+
+ 	footer > div > div > div#footer-right {
+ 		text-align: right;
+ 	}
+
+ 	footer > div > div > div#footer-right > ul {
+ 		margin-bottom: 0;
+ 	}
  }
 

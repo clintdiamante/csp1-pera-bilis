@@ -36,9 +36,8 @@
  	background-color: #FFF;
  }
 
- header > nav > a.navbar-brand {
- 	font-size: 30px;
- 	font-weight: bold;
+ .navbar-brand {
+ 	height: 60px;
  }
 
  .navbar-nav {
@@ -76,12 +75,55 @@
 
  footer {
  	width: 100%;
- 	background-color: #808080;
- 	padding: 10px;
+ 	background-color: #1B252E;
+ 	padding-top: 10px;
  }
 
- footer > p {
+ footer > div > div > div > p {
+ 	color: #92A7B8;
+ 	margin-top: 10px;
+ }
+
+ footer > div > div > div {
  	text-align: center;
- 	margin: 0;
  }
 
+ footer > div > div > div > ul > li {
+ 	display: inline;
+ 	margin: 5px;
+ 	list-style-type: none;
+ }
+
+ footer > div > div > div > ul > li > a {
+ 	font-size: 25px;
+ 	color: #92A7B8;
+ }
+
+/*
+ * Media Query - Small Devices
+ */
+
+ @media (max-width: 575.98px) { 
+ 	main > div > img {
+ 	 	margin-top: 0;
+ 	 	margin-bottom: 0;
+	}
+ }
+
+/*
+ * Media Query - Large Devices
+ */
+
+ @media (min-width: 992px) {
+ 	footer > div > div > div#footer-left {
+ 		text-align: left;
+ 	}
+
+ 	footer > div > div > div#footer-right {
+ 		text-align: right;
+ 	}
+
+ 	footer > div > div > div#footer-right > ul {
+ 		margin-bottom: 0;
+ 	}
+ }

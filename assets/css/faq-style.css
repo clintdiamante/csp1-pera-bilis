@@ -53,6 +53,11 @@
  	width: 100%;
  }
 
+ .background-tint {
+  background-color: rgba(0,0,0,0.9);
+  background-blend-mode: multiply;
+ }
+
  main {
  	width: 100vw;
  	min-height: 100vh;
@@ -61,8 +66,8 @@
 
  main > div > img.faq-img-desktop {
  	position: relative;
- 	margin-top: 20px;
- 	margin-bottom: 20px;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
  }
 
  .faq-img-mobile {
@@ -71,7 +76,7 @@
 
  .left-text {
  	position: absolute;
- 	top: 35%;
+ 	top: 25%;
  	left: 50%;
  	transform: translate(-50%, -50%);
  }
@@ -162,6 +167,7 @@
  */
 
  @media (max-width: 575.98px) {
+
  	.faq-img-desktop {
  		display: none;
  	}
@@ -169,6 +175,7 @@
  	.faq-img-mobile {
  		display: block;
  	}
+
  }
 
 /*

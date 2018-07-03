@@ -1,0 +1,221 @@
+/*
+ * CSS Reset
+ */
+
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
+
+/*
+ * General Rules
+ */
+
+ html,
+ body {
+ 	overflow-x: hidden;
+ }
+
+ body {
+ 	background-color: #FFF;
+ 	font-family: 'Muli', sans-serif;
+ }
+
+/*
+ * Header Section
+ */
+
+ .glow {
+ 	text-shadow: 0 3px 5px #808080;
+ }
+
+ header {
+ 	height: 10%;
+ 	width: 100%;
+ 	background-color: #FFF;
+ }
+
+ .navbar-brand {
+ 	height: 60px;
+ }
+
+ .navbar-nav {
+ 	font-size: 20px;
+ }
+
+/*
+ * Main Section
+ */
+
+ .container-fluid {
+ 	padding: 0;
+ 	width: 100%;
+ }
+
+ .overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+ }
+
+ .background-tint {
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: multiply;
+ }
+
+ main {
+ 	width: 100vw;
+ 	min-height: 100vh;
+ 	background-color: #F69A05;
+ }
+
+ main > div {
+    height: 100%;
+    background-image: url('../img/makati-image-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 10px solid #F69A05;
+    border-bottom: 10px solid #F69A05;
+ }
+
+ #content {
+    min-height: 100vh;
+    color: #FFF;
+    text-align: center;
+ }
+
+ .short-border {
+    width: 40vw;
+    border-top: 1px solid #D3D3D3;
+    opacity: 0.8;
+ }
+
+ #illustration {
+    color: #000;
+ }
+
+ #illustration-1 {
+    width: 350px;
+    height: 350px;
+    background-color: #D3D3D3;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 10px;
+ }
+
+ #illustration-2 {
+    width: 350px;
+    height: 350px;
+    background-color: #D3D3D3;
+    margin: 0 auto;
+    opacity: 0.8;
+    border-radius: 10px;
+ }
+
+ #illustration-3 {
+    width: 350px;
+    height: 350px;
+    background-color: #D3D3D3;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 10px;
+ }
+
+ .wrap {
+    /*position: relative;*/
+ }
+
+ .old-1 {
+    color: #F69A05;
+    font-size: 150px;
+    padding-top: 25px;
+ }
+
+ .new-1 {
+ }
+
+/* Hover Smooth Transition */
+
+ .old-1,
+ .new-1 {
+    transition: opacity 0.2s linear;
+ }
+
+ .new-1 {
+    opacity: 0;
+ }
+
+ .wrap:hover .old-1 {
+    opacity: 0;
+ }
+
+ .wrap:hover .new-1 {
+    opacity: 1;
+ }
+
+/*
+ * Footer Section
+ */
+
+ footer {
+ 	width: 100%;
+ 	background-color: #1B252E;
+ 	padding-top: 10px;
+ }
+
+ footer > div > div > div > p {
+ 	color: #92A7B8;
+ 	margin-top: 10px;
+ }
+
+ footer > div > div > div {
+ 	text-align: center;
+ }
+
+ footer > div > div > div > ul > li {
+ 	display: inline;
+ 	margin: 5px;
+ 	list-style-type: none;
+ }
+
+ footer > div > div > div > ul > li > a {
+ 	font-size: 25px;
+ 	color: #92A7B8;
+ }
+
+/*
+ * Media Query - Small Devices
+ */
+
+ @media (max-width: 575.98px) {
+
+
+
+ }
+
+/*
+ * Media Query - Large Devices
+ */
+
+ @media (min-width: 992px) {
+
+ 	footer > div > div > div#footer-left {
+ 		text-align: left;
+ 	}
+
+ 	footer > div > div > div#footer-right {
+ 		text-align: right;
+ 	}
+
+ 	footer > div > div > div#footer-right > ul {
+ 		margin-bottom: 0;
+ 	}
+ }
+

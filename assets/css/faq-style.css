@@ -59,10 +59,14 @@
  	background-color: #F69A05;
  }
 
- main > div > img {
+ main > div > img.faq-img-desktop {
  	position: relative;
  	margin-top: 20px;
  	margin-bottom: 20px;
+ }
+
+ .faq-img-mobile {
+ 	display: none;
  }
 
  .left-text {
@@ -157,8 +161,14 @@
  * Media Query - Small Devices
  */
 
- @media (max-width: 575.98px) { 
+ @media (max-width: 575.98px) {
+ 	.faq-img-desktop {
+ 		display: none;
+ 	}
 
+ 	.faq-img-mobile {
+ 		display: block;
+ 	}
  }
 
 /*

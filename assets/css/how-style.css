@@ -1,0 +1,149 @@
+/*
+ * CSS Reset
+ */
+
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
+
+/*
+ * General Rules
+ */
+
+ html,
+ body {
+ 	overflow-x: hidden;
+ }
+
+ body {
+ 	background-color: #F69A05;
+ 	font-family: 'Muli', sans-serif;
+ }
+
+/*
+ * Header Section
+ */
+
+ .glow {
+ 	text-shadow: 0 3px 5px #808080;
+ }
+
+ .background-tint {
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: multiply;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.navbar-brand {
+  height: 60px;
+}
+
+.navbar-nav {
+  font-size: 20px;
+}
+
+/*
+ * Main Section
+ */
+
+ .container-fluid {
+ 	padding: 0;
+ 	width: 100%;
+ }
+
+ main {
+ 	width: 100vw;
+ 	min-height: 100vh;
+ 	background-color: #FFF;
+    border-top: 10px solid #F69A05;
+    border-bottom: 10px solid #F69A05;
+ }
+
+ section {
+    height: 33vh;
+ }
+
+ .step-one {
+    background-color: #FFF;
+ }
+
+ .step-two {
+    background-color: #FFF;
+ }
+
+ .step-three {
+    background-color: #FFF;
+ }
+
+/*
+ * Footer Section
+ */
+
+ footer {
+ 	width: 100%;
+ 	background-color: #1B252E;
+ 	padding-top: 10px;
+ }
+
+ footer > div > div > div > p {
+ 	color: #92A7B8;
+ 	margin-top: 10px;
+ }
+
+ footer > div > div > div {
+ 	text-align: center;
+ }
+
+ footer > div > div > div > ul > li {
+ 	display: inline;
+ 	margin: 5px;
+ 	list-style-type: none;
+ }
+
+ footer > div > div > div > ul > li > a {
+ 	font-size: 25px;
+ 	color: #92A7B8;
+ }
+
+/*
+ * Media Query - Very Small Devices (Phones)
+ */
+
+ @media (max-width: 575.98px) {
+
+ }
+
+/*
+ * Media Query - Small Devices (Tablet)
+ */
+
+ @media (max-width: 768px) {
+
+ } 
+
+/*
+ * Media Query - Large Devices
+ */
+
+ @media (min-width: 992px) {
+
+ 	footer > div > div > div#footer-left {
+ 		text-align: left;
+ 	}
+
+ 	footer > div > div > div#footer-right {
+ 		text-align: right;
+ 	}
+
+ 	footer > div > div > div#footer-right > ul {
+ 		margin-bottom: 0;
+ 	}
+ }
+

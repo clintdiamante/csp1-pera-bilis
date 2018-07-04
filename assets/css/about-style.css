@@ -99,51 +99,56 @@
 
  #illustration {
     color: #000;
+    margin: 10px;
  }
 
  #illustration-1 {
-    width: 350px;
-    height: 350px;
-    background-color: #D3D3D3;
+    width: 300px;
+    height: 300px;
     display: inline-block;
-    opacity: 0.8;
+    background-color: #D3D3D3;
+    padding-top: 25px;
     border-radius: 10px;
+    opacity: 0.9;
+
+    color: #F69A05;
+    font-size: 120px;
+    text-transform: uppercase;
+    margin-left: 50px;
  }
 
  #illustration-2 {
-    width: 350px;
-    height: 350px;
-    background-color: #D3D3D3;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
-    opacity: 0.8;
+    background-color: #D3D3D3;
+    padding-top: 25px;
     border-radius: 10px;
+    opacity: 0.9;
+
+    color: #F69A05;
+    font-size: 120px;
+    text-transform: uppercase;
  }
 
  #illustration-3 {
-    width: 350px;
-    height: 350px;
-    background-color: #D3D3D3;
+    width: 300px;
+    height: 300px;
     display: inline-block;
-    opacity: 0.8;
-    border-radius: 10px;
- }
-
- .wrap {
-    /*position: relative;*/
- }
-
- .old-1 {
-    color: #F69A05;
-    font-size: 150px;
+    background-color: #D3D3D3;
     padding-top: 25px;
- }
+    border-radius: 10px;
+    opacity: 0.9;
 
- .new-1 {
+    color: #F69A05;
+    font-size: 120px;
+    text-transform: uppercase;
+    margin-right: 50px;
  }
 
 /* Hover Smooth Transition */
 
- .old-1,
+/* .old-1,
  .new-1 {
     transition: opacity 0.2s linear;
  }
@@ -158,7 +163,7 @@
 
  .wrap:hover .new-1 {
     opacity: 1;
- }
+ }*/
 
 /*
  * Footer Section
@@ -191,14 +196,52 @@
  }
 
 /*
- * Media Query - Small Devices
+ * Media Query - Very Small Devices (Phones)
  */
 
  @media (max-width: 575.98px) {
 
+    #illustration-1,
+    #illustration-2,
+    #illustration-3 {
+        width: 150px;
+        height: 150px;
+        margin: 7px;
+        padding-top: 15px;
+        font-size: 60px;
+        display: inline-block;
+    }
 
+    #illustration-1 > h2,
+    #illustration-2 > h2,
+    #illustration-3 > h2 {
+        font-size: 15px;
+    }
 
  }
+
+/*
+ * Media Query - Small Devices (Tablet)
+ */
+
+ @media (max-width: 768px) {
+    #illustration-1,
+    #illustration-2,
+    #illustration-3 {
+        width: 200px;
+        height: 200px;
+        margin: 7px;
+        padding-top: 25px;
+        font-size: 70px;
+        display: inline-block;
+    }
+
+    #illustration-1 > h2,
+    #illustration-2 > h2,
+    #illustration-3 > h2 {
+        font-size: 18px;
+    }
+ } 
 
 /*
  * Media Query - Large Devices

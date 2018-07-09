@@ -1,149 +1,266 @@
 /*
+ *
  * CSS Reset
+ *
  */
 
  * {
- 	padding: 0;
- 	margin: 0;
- 	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
  }
 
 /*
+ *
  * General Rules
+ *
  */
 
  html,
  body {
- 	overflow-x: hidden;
+    overflow-x: hidden;
  }
 
  body {
- 	background-color: #F69A05;
- 	font-family: 'Muli', sans-serif;
+    background-color: #FFF;
+    font-family: 'Muli', sans-serif;
  }
-
-/*
- * Header Section
- */
-
- .glow {
- 	text-shadow: 0 3px 5px #808080;
- }
-
- .background-tint {
-  background-color: rgba(0,0,0,0.6);
-  background-blend-mode: multiply;
-}
-
-header {
-  height: 10%;
-  width: 100%;
-  background-color: #FFF;
-}
-
-.navbar-brand {
-  height: 60px;
-}
-
-.navbar-nav {
-  font-size: 20px;
-}
-
-/*
- * Main Section
- */
 
  .container-fluid {
- 	padding: 0;
- 	width: 100%;
+    padding: 0;
+    width: 100%;
  }
 
- main {
- 	width: 100vw;
- 	min-height: 100vh;
- 	background-color: #FFF;
-    border-top: 10px solid #F69A05;
-    border-bottom: 10px solid #F69A05;
- }
-
- section {
-    height: 33vh;
- }
-
- .step-one {
-    background-color: #FFF;
- }
-
- .step-two {
-    background-color: #FFF;
- }
-
- .step-three {
-    background-color: #FFF;
+  .glow {
+    text-shadow: 0 3px 5px #808080;
  }
 
 /*
+ *
+ * Header Section
+ *
+ */
+
+ header {
+    height: 10%;
+    width: 100%;
+    background-color: #FFF;
+ }
+
+ .navbar-brand {
+    height: 60px;
+ }
+
+ .navbar-nav {
+    font-size: 20px;
+ }
+
+/*
+ *
+ * Main Section
+ *
+ */
+
+ main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #FFF;
+    border-top: 5px solid #F69A05;
+    border-bottom: 5px solid #F69A05;
+ }
+
+ img#how-banner-small {
+    width: 100%;
+ }
+
+ img#how-banner-large {
+    width: 100%;
+    display: none;
+ }
+
+ div#content {
+    padding: 20px 20px 4px 20px;
+ }
+
+ div#content > h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ div#content > p {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 20px 0 20px;
+ }
+
+ div#content > p > a {
+    color: #000;
+    text-decoration: underline;
+ }
+
+ div.card {
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid #FFF;
+ }
+
+ div.card-body {
+    padding: 0;
+ }
+
+/*
+ *
+ * Accordion 
+ *
+ */
+
+ .accordion {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+ }
+
+ .accordion > i {
+    font-size: 40px;
+    padding-bottom: 10px;
+ }
+
+ .accordion > h3 {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+ .accordion > h4 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0;
+ }
+
+ .active-acc,
+ .accordion:hover {
+    border: 0;
+    background-color: #D3D3D3;
+   }
+
+ .accordion:after {
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+ }
+
+ .panel {
+    font-size: 12px;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    padding: 0 15px 0 15px;
+ }
+
+/*
+ *
  * Footer Section
+ *
  */
 
  footer {
- 	width: 100%;
- 	background-color: #1B252E;
- 	padding-top: 10px;
+    width: 100%;
+    min-height: 10vh;
+    background-color: #1B252E;
+    padding-top: 10px;
  }
 
- footer > div > div > div > p {
- 	color: #92A7B8;
- 	margin-top: 10px;
+ div#footer-left {
+    text-align: center;
  }
 
- footer > div > div > div {
- 	text-align: center;
+ div#footer-left > p {
+    color: #92A7B8;
+    font-weight: bold;
+    margin-top: 10px;
  }
 
- footer > div > div > div > ul > li {
- 	display: inline;
- 	margin: 5px;
- 	list-style-type: none;
+ div#footer-right > ul {
+    padding: 0;
+    text-align: center;
  }
 
- footer > div > div > div > ul > li > a {
- 	font-size: 25px;
- 	color: #92A7B8;
+ div#footer-right > ul > li {
+    display: inline;
+    margin: 5px;
+    list-style-type: none;
+
+ }
+
+ div#footer-right > ul > li > a {
+    font-size: 25px;
+    color: #92A7B8;
  }
 
 /*
- * Media Query - Very Small Devices (Phones)
+ *
+ * Medium Devices
+ *
  */
 
- @media (max-width: 575.98px) {
+ @media (min-width: 768px) {
+
+  img#how-banner-small {
+    display: none;
+    width: 100%;
+  }
+
+  img#how-banner-large {
+    width: 100%;
+    display: block;
+  }
 
  }
 
 /*
- * Media Query - Small Devices (Tablet)
+ *
+ * Large Devices
+ *
  */
 
- @media (max-width: 768px) {
 
- } 
 
-/*
- * Media Query - Large Devices
- */
+ @media (min-width: 1280px) {
 
- @media (min-width: 992px) {
+  img#how-banner-small {
+    display: none;
+    width: 100%;
+  }
 
- 	footer > div > div > div#footer-left {
- 		text-align: left;
- 	}
+  img#how-banner-large {
+    width: 100%;
+    display: block;
+  }
 
- 	footer > div > div > div#footer-right {
- 		text-align: right;
- 	}
+  footer {
+    min-height: 5vh;
+  }
 
- 	footer > div > div > div#footer-right > ul {
- 		margin-bottom: 0;
- 	}
+  div#footer-left {
+    text-align: left;
+  }
+
+  div#footer-right > ul {
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
  }
-

@@ -1,5 +1,7 @@
 /*
+ *
  * CSS Reset
+ *
  */
 
  * {
@@ -9,7 +11,9 @@
  }
 
 /*
+ *
  * General Rules
+ *
  */
 
  html,
@@ -22,13 +26,20 @@
  	font-family: 'Muli', sans-serif;
  }
 
-/*
- * Header Section
- */
-
- .glow {
- 	text-shadow: 0 3px 5px #808080;
+ .container-fluid {
+    padding: 0;
+    width: 100%;
  }
+
+  .glow {
+    text-shadow: 0 3px 5px #808080;
+ }
+
+/*
+ *
+ * Header Section
+ *
+ */
 
  header {
  	height: 10%;
@@ -45,57 +56,50 @@
  }
 
 /*
+ *
  * Main Section
+ *
  */
-
- .container-fluid {
- 	padding: 0;
- 	width: 100%;
- }
-
- .background-tint {
-  background-color: rgba(0,0,0,0.9);
-  background-blend-mode: multiply;
- }
 
  main {
  	width: 100vw;
  	min-height: 100vh;
  	background-color: #F69A05;
+    border-top: 5px solid #F69A05;
+    border-bottom: 5px solid #F69A05;
  }
 
- main > div > img.faq-img-desktop {
- 	position: relative;
- 	margin-top: 10px;
- 	margin-bottom: 10px;
+ #faq-banner-large {
+    width: 100%;
+    display: none;
+    border-bottom: 1px solid #D3D3D3;
  }
 
- .faq-img-mobile {
- 	display: none;
+ #faq-banner-small {
+    width: 100%;
+ 	display: block;
+    border-bottom: 1px solid #D3D3D3;
  }
 
- .left-text {
- 	position: absolute;
- 	top: 25%;
- 	left: 50%;
- 	transform: translate(-50%, -50%);
+ #left-container,
+ #right-container { 
+    background-color: #FFF;
+
  }
 
- .left-text > h5 {
- 	color: #2E2E2E;
- 	text-align: center;
- 	font-size: 25px;
+ #left-container {
+    padding: 15px 30px 0 30px;
  }
 
- .left-text > input {
- 	width: 500px;
+ #right-container {
+    padding: 20px 30px 15px 30px;
  }
 
- main > div > div > div {
- 	position: absolute;
- }
-
-/* Accordion */
+/*
+ *
+ * Accordion 
+ *
+ */
 
  .accordion {
   	background-color: #FFF;
@@ -133,67 +137,98 @@
  }
 
 /*
+ *
  * Footer Section
+ *
  */
 
  footer {
  	width: 100%;
+    min-height: 10vh;
  	background-color: #1B252E;
  	padding-top: 10px;
  }
 
- footer > div > div > div > p {
- 	color: #92A7B8;
- 	margin-top: 10px;
+ div#footer-left {
+    text-align: center;
  }
 
- footer > div > div > div {
- 	text-align: center;
+ div#footer-left > p {
+    color: #92A7B8;
+    font-weight: bold;
+    margin-top: 10px;
  }
 
- footer > div > div > div > ul > li {
- 	display: inline;
- 	margin: 5px;
- 	list-style-type: none;
+ div#footer-right > ul {
+    padding: 0;
+    text-align: center;
  }
 
- footer > div > div > div > ul > li > a {
- 	font-size: 25px;
- 	color: #92A7B8;
+ div#footer-right > ul > li {
+    display: inline;
+    margin: 5px;
+    list-style-type: none;
+
+ }
+
+ div#footer-right > ul > li > a {
+    font-size: 25px;
+    color: #92A7B8;
  }
 
 /*
- * Media Query - Small Devices
+ *
+ * Medium Devices
+ *
  */
 
- @media (max-width: 575.98px) {
+ @media (min-width: 768px) {
 
- 	.faq-img-desktop {
- 		display: none;
- 	}
-
- 	.faq-img-mobile {
+ 	#faq-banner-large {
  		display: block;
  	}
 
+ 	#faq-banner-small {
+ 		display: none;
+ 	}
+
+    .card-title {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
  }
 
 /*
- * Media Query - Large Devices
+ *
+ * Large Devices
+ *
  */
 
- @media (min-width: 992px) {
+ @media (min-width: 1280px) {
 
- 	footer > div > div > div#footer-left {
- 		text-align: left;
- 	}
+    div#left-container {
+        padding-right: 10px;
+        padding-bottom: 15px;
+    }
 
- 	footer > div > div > div#footer-right {
- 		text-align: right;
- 	}
+    div#right-container {
+        padding-top: 15px;
+        padding-left: 10px;
+    }
 
- 	footer > div > div > div#footer-right > ul {
- 		margin-bottom: 0;
- 	}
+    footer {
+        min-height: 5vh;
+    }
+
+    div#footer-left {
+        text-align: left;
+    }
+
+    div#footer-right > ul {
+        text-align: right;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
  }
-

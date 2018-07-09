@@ -1,5 +1,7 @@
 /*
+ *
  * CSS Reset
+ *
  */
 
  * {
@@ -9,7 +11,9 @@
  }
 
 /*
+ *
  * General Rules
+ *
  */
 
  html,
@@ -22,13 +26,25 @@
  	font-family: 'Muli', sans-serif;
  }
 
-/*
- * Header Section
- */
+ .container-fluid {
+    padding: 0;
+    width: 100%;
+ }
 
  .glow {
- 	text-shadow: 0 3px 5px #808080;
+    text-shadow: 0 3px 5px #808080;
  }
+
+ .background-tint {
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: multiply;
+ }
+
+/*
+ *
+ * Header Section
+ *
+ */
 
  header {
  	height: 10%;
@@ -45,34 +61,17 @@
  }
 
 /*
+ *
  * Main Section
+ *
  */
-
- .container-fluid {
- 	padding: 0;
- 	width: 100%;
- }
-
- .overlay {
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    overflow: auto;
-    top: 0px;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.7);
- }
-
- .background-tint {
-  background-color: rgba(0,0,0,0.6);
-  background-blend-mode: multiply;
- }
 
  main {
  	width: 100vw;
  	min-height: 100vh;
  	background-color: #F69A05;
+    border-top: 5px solid #F69A05;
+    border-bottom: 5px solid #F69A05;
  }
 
  main > div {
@@ -81,14 +80,23 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-top: 10px solid #F69A05;
-    border-bottom: 10px solid #F69A05;
  }
 
  #content {
     min-height: 100vh;
     color: #FFF;
     text-align: center;
+    padding: 20px 30px 30px 30px;
+ }
+
+ #content > h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ #content > p {
+    font-size: 13px;
  }
 
  .short-border {
@@ -97,73 +105,83 @@
     opacity: 0.8;
  }
 
- #illustration {
-    color: #000;
-    margin: 10px;
- }
-
- #illustration-1 {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    background-color: #D3D3D3;
-    padding-top: 25px;
+ .card {
+    font-size: 15px;
+    border: 1px solid #FFF;
     border-radius: 10px;
-    opacity: 0.9;
-
-    color: #F69A05;
-    font-size: 120px;
-    text-transform: uppercase;
-    margin-left: 50px;
  }
 
- #illustration-2 {
-    width: 300px;
-    height: 300px;
+ .card-upper-1 {
+    width: 250px;
+    height: 205px;
     margin: 0 auto;
-    background-color: #D3D3D3;
-    padding-top: 25px;
-    border-radius: 10px;
-    opacity: 0.9;
-
-    color: #F69A05;
-    font-size: 120px;
-    text-transform: uppercase;
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    margin-bottom: 20px;
+    padding: 15px 15px 0 15px;
  }
 
- #illustration-3 {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    background-color: #D3D3D3;
-    padding-top: 25px;
-    border-radius: 10px;
-    opacity: 0.9;
-
-    color: #F69A05;
-    font-size: 120px;
-    text-transform: uppercase;
-    margin-right: 50px;
+ .card-upper-2 {
+    width: 250px;
+    height: 220px;
+    margin: 0 auto;
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    margin-bottom: 20px;
+    padding: 15px 15px 0 15px;
  }
 
-/* Hover Smooth Transition */
-
-/* .old-1,
- .new-1 {
-    transition: opacity 0.2s linear;
+ .card-lower-1 {
+    width: 250px;
+    height: 235px;
+    margin: 0 auto;
+    color: #FFF;
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 15px 15px 0 15px;
  }
 
- .new-1 {
-    opacity: 0;
+ .card-lower-2 {
+    width: 250px;
+    height: 265px;
+    margin: 0 auto;
+    color: #FFF;
+    background-color: transparent;
+    padding: 15px 15px 0 15px;
  }
 
- .wrap:hover .old-1 {
-    opacity: 0;
+ .card-left {
+    padding-left: 0;
+    padding-right: 0;
  }
 
- .wrap:hover .new-1 {
-    opacity: 1;
- }*/
+ .card-right {
+    padding-left: 0;
+    padding-right: 0;
+ }
+
+ .card-title {
+    font-size: 13px;
+ }
+
+ .card-body {
+    padding: 0;
+ }
+
+ .card-body > i {
+    font-size: 40px;
+    padding-bottom: 15px;
+ }
+ 
+ .card-body > h5 {
+    text-decoration: underline;
+ }
+
+ .card-body > p {
+    font-size: 10px;
+ }
 
 /*
  * Footer Section
@@ -196,69 +214,136 @@
  }
 
 /*
- * Media Query - Very Small Devices (Phones)
+ *
+ * Medium Devices
+ *
  */
 
- @media (max-width: 575.98px) {
+ @media (min-width: 768px) {
 
-    #illustration-1,
-    #illustration-2,
-    #illustration-3 {
-        width: 150px;
-        height: 150px;
-        margin: 7px;
-        padding-top: 15px;
-        font-size: 60px;
-        display: inline-block;
+    main {
+        min-height: 70vh;
     }
 
-    #illustration-1 > h2,
-    #illustration-2 > h2,
-    #illustration-3 > h2 {
+    div#content {
+        min-height: 70vh;
+        padding: 20px 40px 10px 40px;
+    }
+
+    div.card-body > h5 {
         font-size: 15px;
     }
 
- }
-
-/*
- * Media Query - Small Devices (Tablet)
- */
-
- @media (max-width: 768px) {
-    #illustration-1,
-    #illustration-2,
-    #illustration-3 {
-        width: 200px;
-        height: 200px;
-        margin: 7px;
-        padding-top: 25px;
-        font-size: 70px;
-        display: inline-block;
+    div.card-body > p {
+        font-size: 13px;
     }
 
-    #illustration-1 > h2,
-    #illustration-2 > h2,
-    #illustration-3 > h2 {
-        font-size: 18px;
+    .card-upper-1 {
+        width: 330px;
+        min-height: 250px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        padding: 25px 25px 0 25px;
     }
+
+    .card-upper-2 {
+        width: 330px;
+        height: 250px;
+        margin-right: 30px;
+    }
+
+    .card-lower-1 {
+        width: 330px;
+        height: 290px;
+        padding: 25px 25px 0 25px;
+        margin-left: 30px;
+    }
+
+    .card-lower-2 {
+        width: 330px;
+        height: 290px;
+        margin-right: 30px;
+    }
+
  } 
 
 /*
- * Media Query - Large Devices
+ *
+ * Large Devices
+ *
  */
 
- @media (min-width: 992px) {
+ @media (min-width: 1280px) {
 
- 	footer > div > div > div#footer-left {
- 		text-align: left;
- 	}
+    div#content {
+        padding: 20px 40px 10px 40px;
+    }
 
- 	footer > div > div > div#footer-right {
- 		text-align: right;
- 	}
+    div#content > h3 {
+        font-size: 23px;
+    }
 
- 	footer > div > div > div#footer-right > ul {
- 		margin-bottom: 0;
- 	}
+    div.card-body > h5 {
+        font-size: 17px;
+    }
+
+    div.card-body > p {
+        font-size: 13px;
+    }
+
+    .card-left {
+    }
+
+    .card-upper-1 {
+        width: 500px;
+        height: 260px;
+        margin-left: auto; 
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 30px 25px 0 25px;
+    }
+
+    .card-upper-2 {
+        width: 500px;
+        height: 260px;
+        margin-left: 10px;
+        margin-right: auto;
+        padding: 25px 25px 0 25px;
+    }
+
+    .card-lower-1 {
+        width: 500px;
+        height: 280px;
+        margin-left: auto; 
+        margin-right: 10px;
+        padding: 30px 25px 0 25px;
+    }
+
+    .card-lower-2 {
+        width: 500px;
+        height: 280px;
+        float: left;
+        margin-left: 10px;
+        margin-right: auto;
+        padding: 25px 25px 0 25px;
+    }
+
+    .card-body > i {
+        font-size: 70px;
+    }
+
+    footer {
+        min-height: 5vh;
+    }
+
+    div#footer-left {
+        text-align: left;
+    }
+
+    div#footer-right > ul {
+        text-align: right;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
  }
-

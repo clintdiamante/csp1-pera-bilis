@@ -410,28 +410,28 @@
  	}
 
 	div#ratings {
-  		padding-bottom: 20px;
-  	}
+    padding-bottom: 20px;
+  }
 
-  	div#ratings-1,
-  	div#ratings-2,
-  	div#ratings-3 {
-  		padding-left: 90px;
-  	}
+  div#ratings-1,
+  div#ratings-2,
+  div#ratings-3 {
+  	padding-left: 80px;
+  }
 
-  	footer {
-    	min-height: 5vh;
-  	}
+  footer {
+    min-height: 5vh;
+  }
 
-  	div#footer-left {
-    	text-align: left;
-  	}
+  div#footer-left {
+    text-align: left;
+  }
 
-  	div#footer-right > ul {
-   		text-align: right;
-   	 	margin-bottom: 0;
-   	 	padding-bottom: 0;
-  	}
+  div#footer-right > ul {
+   	text-align: right;
+   	margin-bottom: 0;
+   	padding-bottom: 0;
+  }
 
  }
 

@@ -48,7 +48,7 @@
  }
 
  .navbar-brand {
- 	height: 60px;
+ 	height: 40px;
  }
 
  .navbar-nav {
@@ -183,6 +183,10 @@
  */
 
  @media (min-width: 768px) {
+
+    .navbar-brand {
+    height: 60px;
+    }
 
  	#faq-banner-large {
  		display: block;

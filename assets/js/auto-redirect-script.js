@@ -1,0 +1,1 @@
+window.setTimeout('window.open("./home.html")',4500);

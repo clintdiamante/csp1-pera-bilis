@@ -48,7 +48,7 @@
  }
 
  .navbar-brand {
-    height: 60px;
+    height: 40px;
  }
 
  .navbar-nav {
@@ -161,8 +161,8 @@
     font-size: 12px;
     text-align: center;
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.2s ease-out;
+    overflow: hidden;
     margin-top: 0;
     margin-bottom: 10px;
     background-color: #FFF;
@@ -217,6 +217,23 @@
 
  @media (min-width: 768px) {
 
+  .navbar-brand {
+    height: 60px;
+  }
+
+  main {
+    min-height: 90vh;
+  }
+
+  div#content {
+    padding: 20px 40px 10px 40px;
+  }
+
+  div.card {
+    width: 500px;
+    margin-left: auto;
+  }
+
   img#how-banner-small {
     display: none;
     width: 100%;
@@ -239,6 +256,21 @@
 
  @media (min-width: 1280px) {
 
+  div#content {
+    padding: 20px 40px 10px 40px;
+  }
+
+  div#content > h3 {
+    font-size: 25px;
+  }
+
+  div#content > p {
+    font-size: 17px;
+    padding: 0 50px 0 50px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
   img#how-banner-small {
     display: none;
     width: 100%;
@@ -247,6 +279,34 @@
   img#how-banner-large {
     width: 100%;
     display: block;
+  }
+
+  div.card {
+    width: 900px;
+    margin-left: auto;
+  }
+
+  button.accordion {
+    height: 180px;
+  }
+
+  button.accordion > i {
+    font-size: 55px;
+  }
+
+  button.accordion > h3 {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  button.accordion > h4 {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  div.panel {
+    font-size: 17px;
+    letter-spacing: 1px;
   }
 
   footer {
